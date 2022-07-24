@@ -1,0 +1,212 @@
+select, button {
+  display: block;
+  padding: 20px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+input.numinput {
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px 0;
+}
+
+button.help {
+  background-color: black;
+  height: 75px;
+  width: 75px;
+  padding: 0;
+  margin: 9;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  right: 0;
+  float: right;
+  border-radius: 50%;
+  user-select: none;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+div.helpBox {
+  align-items:flex-end;
+  justify-content: right;
+  width: 100%;
+  align-content: flex-end;
+}
+
+div.graphContainer {
+  display: table;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+}
+table.optionTable {
+  padding: 2%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  margin: auto;
+  width: 100%;
+}
+table.params {
+  padding: 2%;
+  margin: auto;
+  width: 100%;
+}
+
+td.params {
+  padding: 20px;
+  margin: 20px;
+}
+
+label.paramLabel {
+  font-size: x-large;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  display: inline;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+div.socketStatus {
+  width: 80%;
+  padding: 1% 0%;
+  margin: 0 10%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.instructions {
+  width: 500px
+}
+
+// The main container element
+.Collapsible {
+  background-color: white;
+  width: 100%;
+  vertical-align: top;
+  height: 0px;
+}
+
+
+//The content within the collaspable area
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-top: 0;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//The link which when clicked opens the collapsable area
+.Collapsible__trigger {
+  display: block;
+  font-weight: 800;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+  background: turquoise;
+  font-size: large;
+  color: white;
+
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '>';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(90deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+
+.CustomTriggerCSS {
+  background-color: lightcoral;
+  transition: background-color 200ms ease;
+  
+  
+}
+
+.CustomTriggerCSS--open {
+  background-color: darkslateblue;
+}
+
+.Collapsible__custom-sibling {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #CBB700;
+  color: black;
+}
